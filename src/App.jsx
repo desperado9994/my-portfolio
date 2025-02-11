@@ -15,6 +15,7 @@ import Album4 from "./assets/Wolf.png";
 import Song3 from "./assets/ARRET copy.mp3";
 import Song4 from "./assets/UNTITLED.mp3";
 import Resume from "./assets/Luke Broding Resume.pdf";
+import Song5 from "./assets/MAINE RAINE.mp3";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -91,9 +92,9 @@ function App() {
         <a href="https://soundcloud.com/user-743319035-331244015/sets/wolf" target="_blank">
           <img src={Album4} className="album" alt="Album Cover 3" />
         </a>
-        <h3>Listen to "Arret" from Wolf</h3>
+        <h3>Listen to "Maine Raine" from Wolf</h3>
         <audio controls>
-          <source src={Song3} type="audio/mp3" />
+          <source src={Song5} type="audio/mp3" />
         </audio>
       </div>
 
@@ -120,7 +121,7 @@ function App() {
     </div>
     <h3>Check Out the Music Video for "Ambrosia" by HeadFirst</h3>
     <p>
-      During our shoot of "Water of the Will," our team also shot a music video for the song "Ambrosia",
+      During our shoot of "Water of the Will," our crew also shot a music video for the song "Ambrosia",
     </p>
     <p>
       which was written and performed by the band HeadFirst.
