@@ -18,7 +18,7 @@ body.dark-mode {
 }
 
 body.light-mode {
-  background-color: white !important;
+  background: linear-gradient(to right, #d7e8ff, #ffffff); /* Soft gray gradient */
   color: black !important;
 }
 
@@ -204,3 +204,44 @@ body, * {
   margin: 0 auto; /* Centers the items within the grid cells */
 }
 
+.film-section {
+  margin-top: 40px;
+}
+
+.professional-container {
+  
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
+.professional-container h2, .professional-container h3, .professional-container p {
+  margin: 10px 0;
+}
+
+.professional-container h2 {
+  color: #0056b3;
+  font-size: 24px;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
+}
+
+body.dark-mode .professional-container h2 {
+  color: #4CAF50; /* Greenish-blue for dark mode */
+  border-bottom: 2px solid #4CAF50;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+  gap: 10px; /* Adds spacing between items */
+  list-style-type: disc; /* Ensures bullets appear */
+  padding-left: 20px; /* Adjust indentation */
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto; /* Centers the list */
+}

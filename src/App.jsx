@@ -16,6 +16,7 @@ import Song3 from "./assets/ARRET copy.mp3";
 import Song4 from "./assets/UNTITLED.mp3";
 import Resume from "./assets/Luke Broding Resume.pdf";
 import Song5 from "./assets/MAINE RAINE.mp3";
+import GoingPlaces from "./assets/Going Places.png";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -55,13 +56,63 @@ function App() {
       <h1>Luke Broding</h1>
       <h2>Marketing Student at the University of Florida</h2>
       <h3>Welcome to My Portfolio</h3>
-      <p className="read-the-docs">
+      <p>
         I am an upcoming graduate of the University of Florida pursuing a bachelor's degree in marketing.
+      </p>
+      <p>
+        Using the toggle at the top of the page, you can switch between "Professional" and "Creative" modes.
+      </p>
+      <p>
+        In "Professional" mode, you can view my resume and learn about my professional experience.
+      </p>
+      <p>
+        In "Creative" mode, you can listen to my music and learn more about my film projects.
       </p>
       <h2>Resume</h2>
         <a href={Resume} target="_blank" rel="noopener noreferrer">
           <button>View My Resume</button>
         </a>
+        <p>
+        P.S. I coded this website myself in React. View the GitHub Repository {" "}
+        <a href="https://github.com/desperado9994/my-portfolio" target="_blank" rel="noopener noreferrer">
+          here
+          </a>.
+        </p>
+
+        {/* Text only visible in Professional mode */}
+        {!darkMode && (
+  <div className="professional-container">
+    <h2>Education</h2>
+    <h3>University of Florida, Class of 2025</h3>
+    <p>Bachelor of Science in Business Administration - Marketing</p>
+    <p>Minor in Mass Communications</p>
+    <p>Certificate in A.I. Fundamentals and Applications</p>
+
+    <h2>Work Experience</h2>
+    <h3>Fidelis Leadership Group - Social Media Coordinator</h3>
+    <p>June 2020 - Present</p>
+
+    <h3>ManpowerGroup - Marketing Intern</h3>
+    <p>June 2024 - August 2024</p>
+
+    <h3>Allstate - Sales and Marketing Intern</h3>
+    <p>August 2023 - April 2024</p>
+
+    <h2>Skills</h2>
+    <ul className="skills-list">
+      <li>Digital Marketing Strategy</li>
+      <li>Competitor Analysis</li>
+      <li>Google Analytics</li>
+      <li>Adobe Creative Suite</li>
+      <li>Social Media Management</li>
+      <li>Python and SQL</li>
+      <li>Market Research and Analysis</li>
+      <li>CRM Software</li>
+      <li>AI and ML Fundamentals</li>
+      <li>Web Design</li>
+    </ul>
+  </div>
+)}
       {darkMode && (
   <>
     <h2>Music</h2>
@@ -110,26 +161,39 @@ function App() {
     </div>
 
     <h2>Film</h2>
-    <h3>Check Out the Teaser Trailer for "Water of the Will"</h3>
+    <h3>"Water of the Will"</h3>
     <p>
       In May of 2024, I co-directed a short film with Power Struck Productions that is currently in post-production.
     </p>
+    <p>Check out the teaser below! Full trailer coming March 15th.</p>
     <div>
       <video controls style={{ width: "700px", height: "auto" }}>
         <source src={MyVideo} type="video/mp4" />
       </video>
     </div>
-    <h3>Check Out the Music Video for "Ambrosia" by HeadFirst</h3>
+    <h3>"Ambrosia" by HeadFirst</h3>
     <p>
-      During our shoot of "Water of the Will," our crew also shot a music video for the song "Ambrosia",
+      During our shoot of "Water of the Will" our crew also shot a music video for the song "Ambrosia"
     </p>
     <p>
-      which was written and performed by the band HeadFirst.
+      which was written and performed by the band HeadFirst to be used in our film.
     </p>
     <div>
       <video controls style={{ width: "700px", height: "auto" }}>
         <source src={Ambrosia} type="video/mp4" />
       </video>
+    </div>
+    <h3>"Going Places"</h3>
+    <p>
+      In June of 2021, I worked as a Set Production Assistant on the film "Going Places" directed by Max Chernov.
+    </p>
+    <p>
+      Press below to see the IMDB page.
+    </p>
+    <div>
+      <a href="https://www.imdb.com/title/tt14674708/" target="_blank">
+        <img src={GoingPlaces} className="logo" alt="Going Places" />
+      </a>
     </div>
   </>
 )}
