@@ -1,7 +1,19 @@
 body {
-  background-color: white;
   color: black;
+  background: linear-gradient(to right, #d7e8ff, #ffffff); /* Default gradient for light mode */
   transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Light and Dark Mode Styles */
+body.dark-mode {
+  background: black !important; /* Replace gradient with solid black in dark mode */
+  color: white !important; /* White text for dark mode */
+}
+
+body.light-mode {
+  background: linear-gradient(to right, #d7e8ff, #ffffff); /* Soft gray gradient */
+  color: black !important;
 }
 
 #root {
@@ -9,17 +21,6 @@ body {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-/* Light and Dark Mode Styles */
-body.dark-mode {
-  background-color: black !important;
-  color: white !important;
-}
-
-body.light-mode {
-  background: linear-gradient(to right, #d7e8ff, #ffffff); /* Soft gray gradient */
-  color: black !important;
 }
 
 /* Logo Styling */
@@ -155,16 +156,6 @@ input:checked + .slider:before {
   pointer-events: none; /* Ensures interactivity works properly */
 }
 
-body.dark-mode {
-  background-color: black !important;
-  color: white !important;
-}
-
-body.light-mode {
-  background-color: white !important;
-  color: black !important;
-}
-
 /* Ensures content is above particles */
 div {
   position: relative;
@@ -297,12 +288,5 @@ body.dark-mode .professional-container h2 {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px 0;
-}
-
-@media (max-width: 768px) {
-  /* Mobile-specific styles */
-  .your-element {
-      /* Adjust styles for mobile devices */
-  }
 }
 
