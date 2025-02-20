@@ -92,7 +92,7 @@ function App() {
     <h2>Education</h2>
     <h3>
     <img src={ufLogo} alt="University of Florida" className="company-logo" />
-      University of Florida, Class of 2025
+      University of Florida
     </h3>
     <h4>Bachelor of Science in Business Administration - Marketing</h4>
     <h5>Minor in Mass Communications</h5>
@@ -140,7 +140,7 @@ function App() {
         Dance Marathon at the University of Florida
     </h3>
     <h4>Emerging Leaders Program</h4>
-    <h5>September 2021 - April 2022</h5>
+    <h6>September 2021 - April 2022</h6>
 
 
     <h2>Skills</h2>
@@ -160,7 +160,7 @@ function App() {
 )}
       {darkMode && (
   <>
-    <h2>Music</h2>
+    <h5>Music</h5>
     <p>Press each album cover below to see the full album.</p>
     <div className="music-container">
       {/* First Album */}
@@ -206,12 +206,12 @@ function App() {
       </div>
     </div>
 
-    <h2>Film</h2>
+    <h6>Film</h6>
     <h3>"Water of the Will"</h3>
     <p>
       In May of 2024, I co-directed a short film with Power Struck Productions that is currently in post-production.
     </p>
-    <p>Check out the teaser below! Full trailer coming March 15th.</p>
+    <p>Check out the teaser below!</p>
     <div>
       <video controls style={{ width: "700px", height: "auto" }}>
         <source src={MyVideo} type="video/mp4" />
@@ -219,10 +219,13 @@ function App() {
     </div>
     <h3>"Ambrosia" by HeadFirst</h3>
     <p>
-      During our shoot of "Water of the Will" our crew also shot a music video for the song "Ambrosia"
+      The crew for "Water of the Will" also shot a music video for the song "Ambrosia" by HeadFirst.
     </p>
     <p>
-      which was written and performed by the band HeadFirst to be used in our film.
+      Press below to watch the video. To hear more from HeadFirst, press { }
+      <a href="https://music.apple.com/us/artist/headfirst/1565766255" target="_blank" rel="noopener noreferrer">
+          here
+          </a>.
     </p>
     <div>
       <video controls style={{ width: "700px", height: "auto" }}>
@@ -234,7 +237,7 @@ function App() {
       In June of 2021, I worked as a Set Production Assistant on the film "Going Places" directed by Max Chernov.
     </p>
     <p>
-      Press below to see the IMDB page.
+      Press below to see the IMDB page and learn more about the film.
     </p>
     <div>
       <a href="https://www.imdb.com/title/tt14674708/" target="_blank">

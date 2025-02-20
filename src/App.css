@@ -200,7 +200,6 @@ body, * {
 }
 
 .professional-container {
-  
   padding: 20px;
   border-radius: 10px;
   margin: 20px auto;
@@ -290,3 +289,16 @@ body.dark-mode .professional-container h2 {
   padding: 0px 0;
 }
 
+body.dark-mode h5 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px; /* Adjusted margin-top for dark mode */
+  margin-bottom: 10px; /* Adjusted margin-bottom for dark mode */
+}
+
+body.dark-mode h6 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px; /* Adjusted margin-top for dark mode */
+  margin-bottom: 10px; /* Adjusted margin-bottom for dark mode */
+}
