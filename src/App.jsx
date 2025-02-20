@@ -27,15 +27,6 @@ import DMLogo from "./assets/DM Logo.jpeg";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const toggleMode = () => {
-    setMode(prevMode => prevMode === "professional" ? "creative" : "professional");
-    
-    // Force a reflow (causes the browser to repaint the entire page)
-    document.body.style.display = "none";
-    setTimeout(() => {
-        document.body.style.display = "block";
-    }, 10);
-};
 
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => {
