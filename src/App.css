@@ -245,3 +245,64 @@ body.dark-mode .professional-container h2 {
   max-width: 600px;
   margin: 0 auto; /* Centers the list */
 }
+
+.professional-container h3 {
+  font-size: 19px;  /* Make the text smaller than h3 */
+  font-weight: bold; /* Make the text bold */
+  margin-top: 0px;  /* Reduce space above */
+  margin-bottom: 0px;  /* Reduce space below */
+  padding: 0px 0;  /* Reduce space within the borders */
+  align-items: center;
+}
+
+.professional-container h4 {
+  font-size: 16px;  /* Make the text smaller than h3 */
+  font-weight: bold; /* Make the text bold */
+  margin-top: 1px;  /* Reduce space above */
+  margin-bottom: 0px;  /* Reduce space below */
+  padding: 0px 0;  /* Reduce space within the borders */
+  font-style: italic;
+}
+
+.professional-container h5 {
+  font-size: 16px;  /* Match the font size of <p> */
+  line-height: 1.5;  /* Match the line height of <p> */
+  margin-top: 4px;  /* Reduce space above */
+  margin-bottom: 4px;  /* Reduce space below */
+  padding: 0;        /* Remove default padding */
+  font-weight: normal;
+}
+
+.professional-container h6 {
+  font-size: 16px;  /* Match the font size of <p> */
+  line-height: 1.5;  /* Match the line height of <p> */
+  margin-top: 2px;  /* Reduce space above */
+  margin-bottom: 20px;  /* Reduce space below */
+  padding: 0px 0;  /* Reduce space within the borders */
+  font-weight: normal;
+}
+
+.company-logo {
+  width: 30px;  /* Set the desired width for the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add space between logo and heading text */
+  vertical-align: middle; /* Align logo vertically with the text */
+}
+
+.professional-container h3 {
+  display: flex;
+  align-items: center; /* Aligns logo and text vertically */
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 0;
+}
+
+@media (max-width: 768px) {
+  /* Mobile-specific styles */
+  .your-element {
+      /* Adjust styles for mobile devices */
+  }
+}
+

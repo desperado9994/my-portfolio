@@ -17,6 +17,13 @@ import Song4 from "./assets/UNTITLED.mp3";
 import Resume from "./assets/Luke Broding Resume.pdf";
 import Song5 from "./assets/MAINE RAINE.mp3";
 import GoingPlaces from "./assets/Going Places.png";
+import ufLogo from "./assets/uf logo.jpeg";
+import FidelisLogo from "./assets/Fidelis Logo.jpeg";
+import ManpowerLogo from "./assets/Manpower Logo.jpeg";
+import AllstateLogo from "./assets/Allstate Logo.jpeg";
+import StampedeLogo from "./assets/Stampede Logo.jpeg";
+import PhiLogo from "./assets/Phi Tau Logo.jpeg";
+import DMLogo from "./assets/DM Logo.jpeg";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -66,7 +73,7 @@ function App() {
         In "Professional" mode, you can view my resume and learn about my professional experience.
       </p>
       <p>
-        In "Creative" mode, you can listen to my music and learn more about my film projects.
+        In "Creative" mode, you can see my creative projects, including music and film.
       </p>
       <h2>Resume</h2>
         <a href={Resume} target="_blank" rel="noopener noreferrer">
@@ -83,30 +90,68 @@ function App() {
         {!darkMode && (
   <div className="professional-container">
     <h2>Education</h2>
-    <h3>University of Florida, Class of 2025</h3>
-    <p>Bachelor of Science in Business Administration - Marketing</p>
-    <p>Minor in Mass Communications</p>
-    <p>Certificate in A.I. Fundamentals and Applications</p>
+    <h3>
+    <img src={ufLogo} alt="University of Florida" className="company-logo" />
+      University of Florida, Class of 2025
+    </h3>
+    <h4>Bachelor of Science in Business Administration - Marketing</h4>
+    <h5>Minor in Mass Communications</h5>
+    <h6>Certificate in A.I. Fundamentals and Applications</h6>
 
     <h2>Work Experience</h2>
-    <h3>Fidelis Leadership Group - Social Media Coordinator</h3>
-    <p>June 2020 - Present</p>
+    <h3>
+    <img src={FidelisLogo} alt="Fidelis Leadership Group" className="company-logo" />
+      Fidelis Leadership Group
+      </h3>
+    <h4>Social Media Coordinator (Part-Time) </h4>
+    <h6>June 2020 - Present</h6>
 
-    <h3>ManpowerGroup - Marketing Intern</h3>
-    <p>June 2024 - August 2024</p>
+    <h3>
+    <img src={ManpowerLogo} alt="ManpowerGroup" className="company-logo" />
+      ManpowerGroup
+      </h3>
+    <h4>Marketing Intern</h4>
+    <h6>June 2024 - August 2024</h6>
 
-    <h3>Allstate - Sales and Marketing Intern</h3>
-    <p>August 2023 - April 2024</p>
+    <h3>
+    <img src={AllstateLogo} alt="Allstate" className="company-logo" />
+      Allstate Insurance Company
+      </h3>
+    <h4>Sales and Marketing Intern</h4>
+    <h6>August 2023 - April 2024</h6>
+
+    <h3>
+    <img src={StampedeLogo} alt="Stampede Ventures" className="company-logo" />
+      Stampede Ventures
+      </h3>
+    <h4>Student Intern</h4>
+    <h6>January 2022 - April 2022</h6>
+
+    <h2>Leadership & Involvement</h2>
+    <h3>
+    <img src={PhiLogo} alt="Phi Kappa Tau" className="company-logo" />
+        Phi Kappa Tau Fraternity
+    </h3>
+    <h4>Social Media Chair and Photographer</h4>
+    <h6>August 2022 - August 2023</h6>
+
+    <h3>
+    <img src={DMLogo} alt="DM" className="company-logo" />
+        Dance Marathon at the University of Florida
+    </h3>
+    <h4>Emerging Leaders Program</h4>
+    <h5>September 2021 - April 2022</h5>
+
 
     <h2>Skills</h2>
     <ul className="skills-list">
       <li>Digital Marketing Strategy</li>
       <li>Competitor Analysis</li>
-      <li>Google Analytics</li>
-      <li>Adobe Creative Suite</li>
-      <li>Social Media Management</li>
-      <li>Python and SQL</li>
       <li>Market Research and Analysis</li>
+      <li>Social Media Management</li>
+      <li>Adobe Creative Suite</li>
+      <li>Python, SQL, React</li>
+      <li>Google Analytics</li>
       <li>CRM Software</li>
       <li>AI and ML Fundamentals</li>
       <li>Web Design</li>
@@ -116,6 +161,7 @@ function App() {
       {darkMode && (
   <>
     <h2>Music</h2>
+    <p>Press each album cover below to see the full album.</p>
     <div className="music-container">
       {/* First Album */}
       <div className="music-item">
