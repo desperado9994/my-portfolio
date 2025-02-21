@@ -302,3 +302,17 @@ body.dark-mode h6 {
   margin-top: 50px; /* Adjusted margin-top for dark mode */
   margin-bottom: 10px; /* Adjusted margin-bottom for dark mode */
 }
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.creative-pursuits {
+  width: 100%;
+  max-width: 100vw; /* Ensures it doesn't exceed viewport width */
+  display: flex;
+  flex-direction: column; /* Stacks items vertically on small screens */
+  align-items: center;
+  padding: 10px;
+}

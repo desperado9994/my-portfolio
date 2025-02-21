@@ -160,6 +160,7 @@ function App() {
 )}
       {darkMode && (
   <>
+  <div className="creative-pursuits">
     <h5>Music</h5>
     <p>Press each album cover below to see the full album.</p>
     <div className="music-container">
@@ -244,6 +245,7 @@ function App() {
         <img src={GoingPlaces} className="logo" alt="Going Places" />
       </a>
     </div>
+  </div>
   </>
 )}
     </div>
