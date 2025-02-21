@@ -316,3 +316,7 @@ img, video, iframe {
   align-items: center;
   padding: 10px;
 }
+
+body, html {
+  overflow-x: hidden;
+}
