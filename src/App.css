@@ -17,10 +17,11 @@ body.light-mode {
 }
 
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Logo Styling */
@@ -187,6 +188,8 @@ body, * {
   grid-template-rows: repeat(2, auto); /* Creates 2 rows, each with automatic height */
   gap: 20px; /* Adds space between the albums */
   margin-top: 20px;
+  max-width: 90vw; /* Keep within viewport */
+  padding: 0 10px; /* Add some padding */
 }
 
 .music-item {
@@ -321,4 +324,10 @@ img, video, iframe {
 
 body, html {
   overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .music-container {
+    grid-template-columns: 1fr; /* Switch to 1 column on smaller screens */
+  }
 }
