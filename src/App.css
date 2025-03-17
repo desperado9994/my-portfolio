@@ -295,7 +295,7 @@ body.dark-mode .professional-container h2 {
 body.dark-mode h5 {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 50px; /* Adjusted margin-top for dark mode */
+  margin-top: 30px; /* Adjusted margin-top for dark mode */
   margin-bottom: 10px; /* Adjusted margin-bottom for dark mode */
 }
 
@@ -330,4 +330,22 @@ body, html {
   .music-container {
     grid-template-columns: 1fr; /* Switch to 1 column on smaller screens */
   }
+}
+
+.music-icons {
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing */
+  align-items: center;
+  width: 100%; /* Matches album cover width */
+  margin-top: 50px;
+}
+
+.music-icon {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.music-icon:hover {
+  transform: scale(1.2); /* Adds a hover effect */
 }

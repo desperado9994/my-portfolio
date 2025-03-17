@@ -16,7 +16,7 @@ import Song3 from "./assets/ARRET copy.mp3";
 import Song4 from "./assets/UNTITLED.mp3";
 import Resume from "./assets/Luke Broding Resume.pdf";
 import Song5 from "./assets/MAINE RAINE.mp3";
-import GoingPlaces from "./assets/Going Places.png";
+import GoingPlaces from "./assets/Going Places.jpeg";
 import ufLogo from "./assets/uf logo.jpeg";
 import FidelisLogo from "./assets/Fidelis Logo.jpeg";
 import ManpowerLogo from "./assets/Manpower Logo.jpeg";
@@ -24,6 +24,11 @@ import AllstateLogo from "./assets/Allstate Logo.jpeg";
 import StampedeLogo from "./assets/Stampede Logo.jpeg";
 import PhiLogo from "./assets/Phi Tau Logo.jpeg";
 import DMLogo from "./assets/DM Logo.jpeg";
+import Memories from "./assets/MEMORIES.mp4";
+import apple from "./assets/apple.png";
+import spotify from "./assets/Spotify.png";
+import soundcloud from "./assets/soundcloud.png";
+import youtube from "./assets/youtube.png";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -161,8 +166,10 @@ function App() {
       {darkMode && (
   <>
   <div className="creative-pursuits">
-    <h5>Music</h5>
-    <p>Press each album cover below to see the full album.</p>
+    <h5>MUSIC</h5>
+    <p>I have been producing instrumentals under the artist name Desperado since 2021.</p>
+    <p>I've released 4 albums so far - you can see the album covers below.</p>
+    <p>Press each cover to see the full album, or press the icons to see my artist page.</p>
     <div className="music-container">
       {/* First Album */}
       <div className="music-item">
@@ -207,38 +214,45 @@ function App() {
       </div>
     </div>
 
-    <h6>Film</h6>
-    <h3>"Water of the Will"</h3>
-    <p>
-      In May of 2024, I co-directed a short film with Power Struck Productions that is currently in post-production.
-    </p>
-    <p>Check out the teaser below!</p>
-    <div>
-      <video controls style={{ width: "700px", height: "auto" }}>
-        <source src={MyVideo} type="video/mp4" />
-      </video>
-    </div>
-    <h3>"Ambrosia" by HeadFirst</h3>
-    <p>
-      The crew for "Water of the Will" also shot a music video for the song "Ambrosia" by HeadFirst.
-    </p>
-    <p>
-      Press below to watch the video. To hear more from HeadFirst, press { }
-      <a href="https://music.apple.com/us/artist/headfirst/1565766255" target="_blank" rel="noopener noreferrer">
+    <div className="music-icons">
+  <a href="https://open.spotify.com/artist/6ifDzDGRzfv9RnTdh8aD7C?si=v5Kie-TiT2KJ5Qm_ewAk7w" target="_blank">
+    <img src={spotify} alt="Spotify" className="music-icon" />
+  </a>
+  <a href="https://music.apple.com/us/artist/desperado/1749031502" target="_blank">
+    <img src={apple} alt="Apple Music" className="music-icon" />
+  </a>
+  <a href="https://on.soundcloud.com/UADrKNM3krzLu4Q47" target="_blank">
+    <img src={soundcloud} alt="SoundCloud" className="music-icon" />
+  </a>
+  <a href="https://www.youtube.com/@desperado9994" target="_blank">
+    <img src={youtube} alt="YouTube" className="music-icon" />
+  </a>
+</div>
+
+    <h6>"MEMORIES"</h6>
+    <p>In February of 2025, I shot a music video for "MEMORIES" from my upcoming album DESPERADO II.</p>
+    <p>Press below to watch it or press { }
+      <a href="https://www.youtube.com/watch?v=EsjFu3vdVZo" target="_blank" rel="noopener noreferrer">
           here
-          </a>.
+          </a>{" "}
+          to watch on YouTube.
     </p>
     <div>
       <video controls style={{ width: "700px", height: "auto" }}>
-        <source src={Ambrosia} type="video/mp4" />
+        <source src={Memories} type="video/mp4" />
       </video>
     </div>
-    <h3>"Going Places"</h3>
+    <h5>FILM</h5>
+    <h2>Going Places</h2>
     <p>
-      In June of 2021, I worked as a Set Production Assistant on the film "Going Places" directed by Max Chernov.
+      In June of 2021, I worked as a Set Production Assistant on the feature film "Going Places" directed by Max Chernov.
     </p>
     <p>
-      Press below to see the IMDB page and learn more about the film.
+      Press below to see the IMDB page or press { }
+      <a href="https://www.youtube.com/watch?v=0MsL75U6UfQ" target="_blank" rel="noopener noreferrer">
+          here
+          </a>{" "}
+          to watch the trailer on YouTube.
     </p>
     <div>
       <a href="https://www.imdb.com/title/tt14674708/" target="_blank">
