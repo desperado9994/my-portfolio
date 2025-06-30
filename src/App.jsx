@@ -2,7 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import Headshot from './assets/circle2.png';
+import Headshot from './assets/New Headshot.png';
 import Song from "./assets/COME BACK GIRL.mp3";
 import Album from './assets/DESPERADO II COVER.png';
 import MyVideo from './assets/MyVideo.mp4';
@@ -66,10 +66,11 @@ function App() {
         </a>
       </div>
       <h1>Luke Broding</h1>
-      <h2>Marketing Student at the University of Florida</h2>
+      <h2>Marketing Professional</h2>
+      <h2>Graduate of the University of Florida</h2>
       <h3>Welcome to My Portfolio</h3>
       <p>
-        I am an upcoming graduate of the University of Florida pursuing a bachelor's degree in marketing.
+        I am an recent graduate of the University of Florida with a bachelor's degree in marketing.
       </p>
       <p>
         Using the toggle at the top of the page, you can switch between "Professional" and "Creative" modes.
