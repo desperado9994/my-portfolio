@@ -231,7 +231,7 @@ function App() {
 </div>
 
     <h6>"MEMORIES"</h6>
-    <p>In February of 2025, I shot a music video for "MEMORIES" from my upcoming album DESPERADO II.</p>
+    <p>In February of 2025, I shot a music video for "MEMORIES" from my album DESPERADO II.</p>
     <p>Press below to watch it or press { }
       <a href="https://www.youtube.com/watch?v=EsjFu3vdVZo" target="_blank" rel="noopener noreferrer">
           here
