@@ -174,7 +174,7 @@ function App() {
     <div className="music-container">
       {/* First Album */}
       <div className="music-item">
-        <a href="https://music.apple.com/us/artist/desperado/1749031502" target="_blank">
+        <a href="https://music.apple.com/us/album/desperado-ii/1800593675" target="_blank">
           <img src={Album} className="album" alt="Album Cover 1" />
         </a>
         <h3>Listen to "Come Back Girl" from Desperado II</h3>
