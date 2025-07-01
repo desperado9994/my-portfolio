@@ -86,7 +86,7 @@ function App() {
           <button>View My Resume</button>
         </a>
         <p>
-        P.S. I coded this website myself in React. View the GitHub Repository {" "}
+        I coded this website myself in React. View the GitHub Repository {" "}
         <a href="https://github.com/desperado9994/my-portfolio" target="_blank" rel="noopener noreferrer">
           here
           </a>.
