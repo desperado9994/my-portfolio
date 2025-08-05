@@ -110,7 +110,7 @@ function App() {
       Fidelis Leadership Group
       </h3>
     <h4>Social Media Coordinator (Part-Time) </h4>
-    <h6>June 2020 - Present</h6>
+    <h6>June 2020 - June 2025</h6>
 
     <h3>
     <img src={ManpowerLogo} alt="ManpowerGroup" className="company-logo" />
