@@ -29,6 +29,7 @@ import apple from "./assets/apple.png";
 import spotify from "./assets/Spotify.png";
 import soundcloud from "./assets/soundcloud.png";
 import youtube from "./assets/youtube.png";
+import fidelity from "./assets/fidelity.png";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -66,11 +67,12 @@ function App() {
         </a>
       </div>
       <h1>Luke Broding</h1>
-      <h2>Marketing Professional</h2>
-      <h2>Graduate of the University of Florida</h2>
+      <h2>Annuity New Business Specialist</h2>
+      <h2>Fidelity Investments</h2>
       <h3>Welcome to My Portfolio</h3>
+      <p>I am an Annuity New Business Specialist at Fidelity Investments.</p>
       <p>
-        I am an recent graduate of the University of Florida with a bachelor's degree in marketing.
+        I am also a recent graduate of the University of Florida with a bachelor's degree in marketing.
       </p>
       <p>
         Using the toggle at the top of the page, you can switch between "Professional" and "Creative" modes.
@@ -106,10 +108,16 @@ function App() {
 
     <h2>Work Experience</h2>
     <h3>
+      <img src={fidelity} alt="Fidelity Investments" className="company-logo" />
+      Fidelity Investments
+    </h3>
+    <h4>Annuity New Business Specialist</h4>
+    <h6>September 2025 - Present</h6>
+    <h3>
     <img src={FidelisLogo} alt="Fidelis Leadership Group" className="company-logo" />
       Fidelis Leadership Group
       </h3>
-    <h4>Social Media Coordinator (Part-Time) </h4>
+    <h4>Social Media Coordinator</h4>
     <h6>June 2020 - June 2025</h6>
 
     <h3>
